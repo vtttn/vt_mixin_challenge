@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CLASS 11 - EXERCISE 3</title>
+
+	<script type="text/javascript">
+		
+	var userProfile = {
+		name: 'Fred Kelly',
+		address: '729 Dui Dr',
+		city: 'Fort Campbell',
+		state: 'UT',
+		zip: 85990,
+		avatar: 'lighthouse',
+	}
+
+	function getProfileUpdate(userProfile){
+		this.name = [];
+		this.address = [];
+		this.city = [];
+		this.state = [];
+		this.zip = [];
+		this.avatar = [];
+
+		return 
+
+		// var userProfile = new getProfileUpdate('newInfo');
+	}
+		// userProfile.prototype.address = getProfileUpdate();
+	
+
+	//var userProfile = new getProfileUpdate('342 Street');
+
+
+	console.log(getProfileUpdate())
+	console.log(userProfile.address);
+
+
+	function updateProfile(){
+		var upDate = Object.assign({}, userProfile, {
+			city: 'Fort Havenport',
+		});
+		
+		return upDate;
+	};
+
+	console.log(updateProfile())
+
+
+
+
+
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
